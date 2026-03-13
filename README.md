@@ -18,7 +18,7 @@ During the communication of VASPs, there are some private information that must 
 
 We're using [IVMS101 (interVASP Messaging Standard)](https://intervasp.org/) as our private information format.
 
-We also provide [IVMS101 Typescript Utility](https://github.com/CoolBitX-Technology/sygna-bridge-ivms-utils/tree/master/typescript) to construct data payload.
+We also provide [IVMS101 Typescript Utility](https://github.com/sygnaio/sygna-bridge-ivms-utils/tree/master/typescript) to construct data payload.
 
 ```javascript
 const sensitive_data = {
