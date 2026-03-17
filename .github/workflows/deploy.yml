@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - feat/fix_npmjs_workflow
 
 permissions:
   id-token: write  # Required for OIDC
