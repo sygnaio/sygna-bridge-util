@@ -1,6 +1,9 @@
 {
   "name": "@sygna/bridge-util",
   "version": "2.0.3",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "JavaScript library to interact with Sygna Bridge Server.",
   "main": "index.js",
   "scripts": {
