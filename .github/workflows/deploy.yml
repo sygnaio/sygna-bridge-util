@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          registry-url: 'https://registry.npmjs.org/' # 必須指定 registry
+          
       - name: Install dependencies
         run: |
           npm install
