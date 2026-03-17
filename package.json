@@ -2,7 +2,8 @@
   "name": "@sygna/bridge-util",
   "version": "2.0.4",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "description": "JavaScript library to interact with Sygna Bridge Server.",
   "main": "index.js",
