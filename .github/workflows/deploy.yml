@@ -26,5 +26,8 @@ jobs:
         run: |
           npm run test
       - name: Publish
-        run: |
-          npm publish --access public
+        # 增加 --provenance 標誌（這是 OIDC 模式的最佳實踐，能與 GitHub 建立強關聯）
+        run: npm publish --access public --provenance
+        env:
+          # 確保在執行時環境中不帶任何可能干擾的 NPM Token 變數
+          NODE_AUTH_TOKEN: ""
