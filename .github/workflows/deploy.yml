@@ -28,6 +28,3 @@ jobs:
       - name: Publish
         run: |
           npm publish --access public
-        env:
-          # 使用傳統 Token 繞過 OIDC 比對
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
