@@ -4,14 +4,13 @@ on:
   push:
     branches:
       - master
-      - feat/*          # ← 加上你原本就有的 feat 分支
 
 permissions:
   id-token: write
   contents: read
 
 jobs:
-  publish:              # ← 改名更清楚（可選）
+  publish:              
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,17 +18,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'                    # ← 升級到最新 LTS
+          node-version: '22'                
           registry-url: 'https://registry.npmjs.org/'
-          
+
       - name: Upgrade npm to latest (required for Trusted Publishing)
         run: npm install -g npm@latest
 
       - name: Install dependencies
-        run: npm ci                             # ← 更乾淨
+        run: npm ci                            
 
       - name: Test with jest
         run: npm test
 
       - name: Publish
-        run: npm publish --access public --provenance   # ← 加上 provenance
+        run: npm publish --access public --provenance   
