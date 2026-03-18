@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '22'                    # ← 升級到最新 LTS
           registry-url: 'https://registry.npmjs.org/'
+          
+      - name: Upgrade npm to latest (required for Trusted Publishing)
+        run: npm install -g npm@latest
 
       - name: Install dependencies
         run: npm ci                             # ← 更乾淨
