@@ -12,47 +12,47 @@ const BENEFICIARY_PUBLIC_KEY = '{{BENEFICIARY_PUBLIC_KEY}}';
 
 const sensitive_data = {
   "originator": {
-    "originator_persons": [
+    "originatorPerson": [
       {
-        "natural_person": {
+        "naturalPerson": {
           "name": {
-            "name_identifiers": [
+            "nameIdentifier": [
               {
-                "primary_identifier": "Wu Xinli",
-                "name_identifier_type": "LEGL"
+                "primaryIdentifier": "Wu Xinli",
+                "naturalPersonNameIdentifierType": "LEGL"
               }
             ]
           },
-          "national_identification": {
-            "national_identifier": "446005",
-            "national_identifier_type": "RAID",
-            "registration_authority": "RA000553"
+          "nationalIdentification": {
+            "nationalIdentifier": "446005",
+            "nationalIdentifierType": "RAID",
+            "registrationAuthority": "RA000553"
           },
-          "country_of_residence": "TZ"
-        }
+          "countryOfResidence": "TZ"
+        },
+        "accountNumber": [
+          "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV"
+        ]
       }
-    ],
-    "account_numbers": [
-      "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV"
     ]
   },
   "beneficiary": {
-    "beneficiary_persons": [
+    "beneficiaryPerson": [
       {
-        "legal_person": {
+        "legalPerson": {
           "name": {
-            "name_identifiers": [
+            "nameIdentifier": [
               {
-                "legal_person_name": "ABC Limited",
-                "legal_person_name_identifier_type": "LEGL"
+                "legalPersonName": "ABC Limited",
+                "legalPersonNameIdentifierType": "LEGL"
               }
             ]
           }
-        }
+        },
+        "accountNumber": [
+          "rAPERVgXZavGgiGv6xBgtiZurirW2yAmY"
+        ]
       }
-    ],
-    "account_numbers": [
-      "rAPERVgXZavGgiGv6xBgtiZurirW2yAmY"
     ]
   }
 };
